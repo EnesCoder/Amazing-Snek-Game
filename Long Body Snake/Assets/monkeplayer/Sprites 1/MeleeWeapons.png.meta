@@ -223,8 +223,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MeleeWeapons_0: -7878944017238391291
       MeleeWeapons_1: 2740786705201478205
+      MeleeWeapons_0: -7878944017238391291
       MeleeWeapons_2: -2113449292985305065
   spritePackingTag: 
   pSDRemoveMatte: 0

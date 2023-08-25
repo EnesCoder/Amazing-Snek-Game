@@ -132,14 +132,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SawPlayer: 0
+<<<<<<< HEAD
+  speed: 400
+  ViewPos: {fileID: 4706486647803854062}
+=======
   speed: 200
   ViewPos: {fileID: 7060918758046261506}
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
   ViewRange: 3.04
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 128
   maxSpeed: {x: 5, y: 5}
+<<<<<<< HEAD
+  knockbackForce: 2.5
+  phm: {fileID: 0}
+--- !u!61 &4706486649313805771
+=======
 --- !u!61 &7060918758683777063
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,3 +197,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+<<<<<<< HEAD
+--- !u!114 &2354714757802447603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4706486649313805775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99fc9f20777cea441a81fdb42c66438c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t: {fileID: 0}
+  boneObj: {fileID: 3751255426368810361, guid: e8c38f50d8e21364295aa620b859c17a, type: 3}
+  pirateSword: {fileID: 0}
+  blood: {fileID: 0}
+  health: 1
+  tridentMeleeDamage: 1
+  throwDamageDivider: 10
+=======
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d

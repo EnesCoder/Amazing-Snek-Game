@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Long Body Snake/Assets/monkeplayer/Settings/Renderer2D.asset.meta
+guid: fd58a0194f887144585690e2b9dc1db2
+=======
 guid: 424799608f7334c24bf367e4bbfa7f9a
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d:Long Body Snake/monkeAssets/Assets/Settings/Renderer2D.asset.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000

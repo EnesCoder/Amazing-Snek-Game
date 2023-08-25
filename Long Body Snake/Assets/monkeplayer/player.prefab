@@ -45,7 +45,11 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+<<<<<<< HEAD
+  m_Offset: {x: 0.09486151, y: -0.2591262}
+=======
   m_Offset: {x: 0.12735367, y: -0.017234325}
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -56,7 +60,11 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
+<<<<<<< HEAD
+  m_Size: {x: 0.8211069, y: 0.6542187}
+=======
   m_Size: {x: 0.5106201, y: 0.069345474}
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
   m_EdgeRadius: 0
 --- !u!1 &51115095663978521
 GameObject:
@@ -69,8 +77,13 @@ GameObject:
   - component: {fileID: 51115096197841252}
   - component: {fileID: 51115095663978522}
   - component: {fileID: 51115096197841253}
+<<<<<<< HEAD
+  - component: {fileID: 51115095663978520}
+  - component: {fileID: 1284929882448634629}
+=======
   - component: {fileID: 51115095663978523}
   - component: {fileID: 51115095663978520}
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
   m_Layer: 6
   m_Name: trident
   m_TagString: trident
@@ -159,12 +172,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAttacking: 0
+<<<<<<< HEAD
+  maxThrowForce: 40
   throwForce: 0
+  throwForceAddition: 10
+  throwMultiplier: 10
+=======
+  throwForce: 0
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
   thrown: 0
   player: {fileID: 51115096310174649}
   tridentCol: {fileID: 0}
   fishCol: {fileID: 0}
   hasEnoughVel: 0
+<<<<<<< HEAD
+  retrievingSpeed: 10
+  retrieveKey: 116
+  minDistToStopRetrieve: 1
+=======
 --- !u!114 &51115095663978523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +206,7 @@ MonoBehaviour:
   tridentMelee: {fileID: 51115096197841253}
   maxThrowForce: 20
   setButton: 1
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
 --- !u!60 &51115095663978520
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -213,6 +239,34 @@ PolygonCollider2D:
       - {x: 0.12052822, y: -0.2258234}
       - {x: 0.57011604, y: 0.057784557}
       - {x: 0.5625, y: 0.5625}
+<<<<<<< HEAD
+--- !u!114 &1284929882448634629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51115095663978521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a0e84b5ed4a8b49be831ec11de453a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAttacking: 0
+  maxThrowForce: 40
+  throwForce: 10
+  throwForceAddition: 10
+  throwMultiplier: 10
+  thrown: 0
+  player: {fileID: 51115096310174649}
+  tridentCol: {fileID: 0}
+  fishCol: {fileID: 0}
+  hasEnoughVel: 0
+  retrievingSpeed: 10
+  retrieveKey: 116
+  minDistToStopRetrieve: 1
+=======
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
 --- !u!1 &51115096208093616
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +489,10 @@ MonoBehaviour:
   fallDamage: 2
   InWater: 0
   waterMovementMultiplier: 1
+<<<<<<< HEAD
+=======
   waterGravity: 1
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
   jumpKey: 32
 --- !u!95 &51115096310174648
 Animator:

@@ -40,8 +40,13 @@ public class Parasite : MonoBehaviour
 		if(c.collider.CompareTag("Player")){
 			var ph = obj.GetComponent<PlayerHealthManager>();
 			var r = obj.GetComponent<Rigidbody2D>();
+			var p = obj.GetComponent<PlayerMovement>();
 			var forceDir = obj.transform.position.x < transform.position.x ? -1f : 1f;
+
+			r.velocity = Vector2.zero;
+			p.gotKnocked = true;
 			r.AddForce(new Vector2(forceDir * playerPush, 0f), ForceMode2D.Impulse);
+
 			ph.playerHealth -= playerDamage;
 		}
 	}
