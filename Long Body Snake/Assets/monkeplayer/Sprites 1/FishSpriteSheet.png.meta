@@ -583,6 +583,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+<<<<<<< HEAD
       FishSpriteSheet_17: 6330160194222889634
       FishSpriteSheet_10: 8274134367382996775
       FishSpriteSheet_12: 6370065439056060604
@@ -601,6 +602,26 @@ TextureImporter:
       FishSpriteSheet_2: 5899756107202851653
       FishSpriteSheet_9: 1996112312282914384
       FishSpriteSheet_15: -3701288112976474781
+=======
+      FishSpriteSheet_0: -6495435065476156382
+      FishSpriteSheet_1: -3813488274620997920
+      FishSpriteSheet_10: 8274134367382996775
+      FishSpriteSheet_11: 4274954400625389995
+      FishSpriteSheet_12: 6370065439056060604
+      FishSpriteSheet_13: 7721036847012381085
+      FishSpriteSheet_14: -2566177220234004869
+      FishSpriteSheet_15: -3701288112976474781
+      FishSpriteSheet_16: 6614432368559925487
+      FishSpriteSheet_17: 6330160194222889634
+      FishSpriteSheet_2: 5899756107202851653
+      FishSpriteSheet_3: -4068497942791604889
+      FishSpriteSheet_4: -1201087896353689035
+      FishSpriteSheet_5: -5347351684073776432
+      FishSpriteSheet_6: 1891501779748706770
+      FishSpriteSheet_7: 1240528314392625931
+      FishSpriteSheet_8: -8769310385082841661
+      FishSpriteSheet_9: 1996112312282914384
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

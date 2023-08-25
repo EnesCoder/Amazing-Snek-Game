@@ -40,7 +40,7 @@ public class trident : MonoBehaviour
 	
     void Update()
     {
-		Debug.Log(retrieving);
+		Debug.Log(hasEnoughVel);
 		
         if(thrown){
 			var rb = GetComponent<Rigidbody2D>();

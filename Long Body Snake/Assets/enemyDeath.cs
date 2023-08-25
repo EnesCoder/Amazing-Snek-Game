@@ -29,10 +29,14 @@ public class enemyDeath : MonoBehaviour
     {
         if(other.tag == "tridentTip"){
             if(t.hasEnoughVel || t.playerAttacking){
+<<<<<<< HEAD
                 if(t.thrown)
 					health -= t.throwForce / throwDamageDivider;
 				else
 					health -= tridentMeleeDamage;
+=======
+                health -= 1f;
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
             }
         }
     }

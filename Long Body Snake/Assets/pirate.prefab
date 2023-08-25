@@ -8,6 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 8559514786352477940}
   - component: {fileID: 8559514786352477942}
   - component: {fileID: 8559514786352477943}
@@ -4830,8 +4831,17 @@ GameObject:
   - component: {fileID: 5313477005526950512}
   - component: {fileID: 8559514786382539046}
   m_Layer: 8
+=======
+  - component: {fileID: 3898859603023293760}
+  - component: {fileID: 3898859603023293761}
+  - component: {fileID: 3898859603023293762}
+  - component: {fileID: 3898859603023293763}
+  - component: {fileID: 3898859603023293767}
+  - component: {fileID: 3898859603023293766}
+  m_Layer: 0
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
   m_Name: pirate
-  m_TagString: pirate
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4915,7 +4925,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 8559514786382539055}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: ca2b92eeb1358f043a34ce9c89f7f2b8, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -4945,6 +4955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t: {fileID: 0}
+<<<<<<< HEAD
   boneObj: {fileID: 3751255426368810361, guid: e8c38f50d8e21364295aa620b859c17a, type: 3}
   pirateSword: {fileID: 8559514786537790595}
   blood: {fileID: 8559514786352477942}
@@ -4952,6 +4963,9 @@ MonoBehaviour:
   tridentMeleeDamage: 1
   throwDamageDivider: 10
 --- !u!50 &8559514786382539044
+=======
+--- !u!50 &3898859603023293767
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -4986,6 +5000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pirateDamage: 2
   player: {fileID: 0}
+<<<<<<< HEAD
   speed: 6
   rb: {fileID: 8559514786382539044}
   anim: {fileID: 8559514786382539046}
@@ -5135,3 +5150,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+  speed: 0
+  rb: {fileID: 3898859603023293767}
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d

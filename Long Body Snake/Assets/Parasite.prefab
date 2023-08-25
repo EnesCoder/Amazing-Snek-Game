@@ -11,8 +11,13 @@ GameObject:
   - component: {fileID: 970629967085023934}
   - component: {fileID: 3594389508762000670}
   - component: {fileID: 8663422662127781344}
+<<<<<<< HEAD
   - component: {fileID: 5505833558269041784}
   - component: {fileID: 1926180399073993510}
+=======
+  - component: {fileID: 7299601055852941898}
+  - component: {fileID: 5505833558269041784}
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
   m_Layer: 8
   m_Name: Parasite
   m_TagString: Untagged
@@ -103,6 +108,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+<<<<<<< HEAD
+=======
+--- !u!114 &7299601055852941898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2839650758747620757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8308f72dff9df6d418a0fec416c2aef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceMultiplier: 2
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
 --- !u!50 &5505833558269041784
 Rigidbody2D:
   serializedVersion: 4
@@ -124,6 +145,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+<<<<<<< HEAD
 --- !u!114 &1926180399073993510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,3 +162,5 @@ MonoBehaviour:
   rotationSpd: 30
   playerDamage: 2
   playerPush: 2
+=======
+>>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d
