@@ -5,7 +5,17 @@ using UnityEngine;
 public class HealthPickup : MonoBehaviour
 {
     [SerializeField] PlayerHealthManager phm;
-    // Start is called before the first frame update
+
+    public Sprite[] sprites;
+
+
+    private void Start()
+    {
+        int r = Random.Range(0, sprites.Length);
+        GetComponent<SpriteRenderer>().sprite = sprites[r]; 
+    }
+
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "player"){
