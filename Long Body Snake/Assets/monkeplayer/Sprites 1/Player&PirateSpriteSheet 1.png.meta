@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9f7f79fba1f481041845e05e495c3f69
+guid: 46a905b149a026049abe36484fa42cf0
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -559,23 +559,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player&PirateSpriteSheet 1_0: 569304621749850913
-      Player&PirateSpriteSheet 1_1: -3689718594223304965
-      Player&PirateSpriteSheet 1_10: -6110927291626145397
-      Player&PirateSpriteSheet 1_11: -4257635337187408940
-      Player&PirateSpriteSheet 1_12: 3712132308609755362
-      Player&PirateSpriteSheet 1_13: -4559291523072887874
-      Player&PirateSpriteSheet 1_14: -5733827293301267462
-      Player&PirateSpriteSheet 1_15: -5678952120517219236
-      Player&PirateSpriteSheet 1_16: 8651242232358175805
-      Player&PirateSpriteSheet 1_2: 5736340858541107748
-      Player&PirateSpriteSheet 1_3: -6617763887317071376
-      Player&PirateSpriteSheet 1_4: 7592188810495748773
-      Player&PirateSpriteSheet 1_5: 1137082944926907857
-      Player&PirateSpriteSheet 1_6: 5254383501096586451
-      Player&PirateSpriteSheet 1_7: -2204086469039155205
-      Player&PirateSpriteSheet 1_8: 4947528920508104323
       Player&PirateSpriteSheet 1_9: -257410975651185888
+      Player&PirateSpriteSheet 1_4: 7592188810495748773
+      Player&PirateSpriteSheet 1_6: 5254383501096586451
+      Player&PirateSpriteSheet 1_12: 3712132308609755362
+      Player&PirateSpriteSheet 1_15: -5678952120517219236
+      Player&PirateSpriteSheet 1_1: -3689718594223304965
+      Player&PirateSpriteSheet 1_7: -2204086469039155205
+      Player&PirateSpriteSheet 1_0: 569304621749850913
+      Player&PirateSpriteSheet 1_16: 8651242232358175805
+      Player&PirateSpriteSheet 1_5: 1137082944926907857
+      Player&PirateSpriteSheet 1_11: -4257635337187408940
+      Player&PirateSpriteSheet 1_3: -6617763887317071376
+      Player&PirateSpriteSheet 1_14: -5733827293301267462
+      Player&PirateSpriteSheet 1_13: -4559291523072887874
+      Player&PirateSpriteSheet 1_8: 4947528920508104323
+      Player&PirateSpriteSheet 1_2: 5736340858541107748
+      Player&PirateSpriteSheet 1_10: -6110927291626145397
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

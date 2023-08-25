@@ -43,6 +43,8 @@ public class trident : MonoBehaviour
 		Debug.Log(retrieving);
 		
         if(thrown){
+			var rb = GetComponent<Rigidbody2D>();
+			if(rb){
             if(Mathf.Abs(gameObject.GetComponent<Rigidbody2D>().velocity.x) > 2f){
                 hasEnoughVel = true;
             }
@@ -50,6 +52,7 @@ public class trident : MonoBehaviour
             {
                 hasEnoughVel = false;   
             }
+			}
         }
         if(!thrown){
             hasEnoughVel = false;
@@ -161,10 +164,12 @@ public class trident : MonoBehaviour
 	}
 	
 	public IEnumerator Retrieve(){
+		var rb = GetComponent<Rigidbody2D>();
+		if(rb)
+			rb.velocity = Vector2.zero;
 		while(Vector2.Distance(transform.position, player.position) > minDistToStopRetrieve){
 			GetComponent<Collider2D>().enabled = false;
 			retrieving = true;
-			var rb = GetComponent<Rigidbody2D>();
 			if(rb)
 				rb.gravityScale = 0f;
 			transform.position = Vector2.MoveTowards(transform.position, player.position, retrievingSpeed * Time.deltaTime);

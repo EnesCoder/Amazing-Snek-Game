@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Water : MonoBehaviour
 {
-	public float waterGravity = 0.2f;
+	public float waterGravity = 0.5f;
 	public List<Rigidbody2D> bodiesInside = new List<Rigidbody2D>();
 	public List<float> originalGravities = new List<float>();
 	

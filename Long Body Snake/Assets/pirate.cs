@@ -14,29 +14,32 @@ public class pirate : MonoBehaviour
 
     public bool SawPlayer = false;
     public bool CanAttack;
-    public bool AttackReady;
     public float attackRange;
-    public float Cooldown;
 
     public float ViewRange;
     public LayerMask playerLayerMask;
+	public LayerMask tridentLayerMask;
 	
 	public float knockbackForce = 2.5f;
+	public float attackGetPushed = 1.5f;
+	
+	private float cooldown = 0f;
+	public float cooldownOrigin = 0.4f;
 
     void Start()
     {
-        speed = 3f;
-        direction = 1;
         anim = GetComponent<Animator>();
+		player = GameObject.FindGameObjectWithTag("player");
     }
 
     // Update is called once per frame
     void Update()
     {
         SawPlayer = Physics2D.OverlapCircle(transform.position, ViewRange, playerLayerMask);
-        AttackReady = Physics2D.OverlapCircle(attackPoint.position, attackRange, playerLayerMask);
+        CanAttack = Physics2D.OverlapCircle(attackPoint.position, attackRange, playerLayerMask) || 
+		Physics2D.OverlapCircle(attackPoint.position, attackRange, tridentLayerMask);
 
-        if (SawPlayer)
+        if (SawPlayer && !CanAttack)
         {
             anim.SetBool("movement", true);
             if (player.transform.position.x > transform.position.x)
@@ -64,21 +67,31 @@ public class pirate : MonoBehaviour
             direction = 0;
         }
         
-		if(rb){
+		if(rb && !CanAttack){
 			rb.velocity = new Vector2(
 				speed * direction,
 				rb.velocity.y
 			);
 		}
 
-        if (AttackReady && CanAttack)
+        if (CanAttack)
         {
+			cooldown -= Time.deltaTime;
+			if(cooldown <= 0f){
             anim.SetTrigger("attack");
             anim.SetBool("Attacked", false);
-            Invoke("AttackDone", 0.5f);
+            Invoke("AttackDone", 0.4f);
             player.GetComponent<PlayerHealthManager>().playerHealth -= pirateDamage;
-			player.GetComponent<Rigidbody2D>().AddForce(new Vector2(2f * knockbackForce, 0f), ForceMode2D.Impulse);
-            CanAttack = false;
+
+			var p = player.GetComponent<PlayerMovement>();
+			p.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+			p.gotKnocked = true;
+			p.GetComponent<Rigidbody2D>().AddForce(new Vector2(direction * knockbackForce, 0f), ForceMode2D.Impulse);
+			
+			rb.AddForce(new Vector2(direction * knockbackForce, 0f), ForceMode2D.Impulse);
+
+			cooldown = cooldownOrigin;
+			}
         }
     }
 
@@ -86,7 +99,6 @@ public class pirate : MonoBehaviour
     {
         anim.SetBool("Attacked", true);
         anim.ResetTrigger("attack");
-        Invoke("SetCanAttack", Cooldown);
     }
 
     private void OnDrawGizmos()
@@ -94,10 +106,5 @@ public class pirate : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, ViewRange);
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-    }
-
-    private void SetCanAttack()
-    {
-        CanAttack = true;
     }
 }

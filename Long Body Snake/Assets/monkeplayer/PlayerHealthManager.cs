@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class PlayerHealthManager : MonoBehaviour
 {
-	public float playerHealth = 6f;
+	public float playerHealth = 5f;
 	
 	private void Update()
 	{
-		if(playerHealth <= 0f) Debug.Log("Ded");
+		if(playerHealth > 5f){
+			playerHealth = 5f;
+		}
+		if(playerHealth <= 0f){
+			Destroy(gameObject);
+		}
 		Debug.Log(playerHealth);
 	}
 }
-

@@ -133,13 +133,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SawPlayer: 0
-  speed: 600
+  speed: 400
   ViewPos: {fileID: 4706486647803854062}
   ViewRange: 3.04
   playerLayerMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 128
   maxSpeed: {x: 5, y: 5}
+  knockbackForce: 2.5
+  phm: {fileID: 0}
 --- !u!61 &4706486649313805771
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -186,7 +188,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!114 &2354714757802447603
 MonoBehaviour:
   m_ObjectHideFlags: 0

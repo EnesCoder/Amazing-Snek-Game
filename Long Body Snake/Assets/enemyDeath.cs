@@ -10,8 +10,6 @@ public class enemyDeath : MonoBehaviour
 	[SerializeField] GameObject pirateSword;
 
 	[SerializeField] ParticleSystem blood;
-	
-	private Rigidbody2D rb;
 
 	bool spawnedBones;
 	bool gotDamagedTrident;
@@ -21,14 +19,10 @@ public class enemyDeath : MonoBehaviour
 	public float tridentMeleeDamage = 1f;
 	public float throwDamageDivider = 10f;
 	
-	public float tridentMeleeKnockback = 2f;
-	
 	void Start()
 	{
 		gotDamagedTrident = false;
 		gotDamagedMelee = false;
-		
-		rb = GetComponent<Rigidbody2D>();
 	}
 	
     void OnTriggerEnter2D(Collider2D other)
@@ -37,12 +31,8 @@ public class enemyDeath : MonoBehaviour
             if(t.hasEnoughVel || t.playerAttacking){
                 if(t.thrown)
 					health -= t.throwForce / throwDamageDivider;
-					if(rb)
-						rb.AddForce(new Vector2(t.GetComponent<Rigidbody2D>().velocity.x, 0f), ForceMode2D.Impulse);
 				else
 					health -= tridentMeleeDamage;
-					if(rb)
-						rb.AddForce(new Vector2(tridentMeleeKnockback, 0f), ForceMode2D.Impulse);
             }
         }
     }
@@ -53,14 +43,10 @@ public class enemyDeath : MonoBehaviour
             if(t.hasEnoughVel || t.playerAttacking){
                 if(t.thrown && !gotDamagedTrident){
 					health -= t.throwForce / throwDamageDivider;
-					if(rb)
-						rb.AddForce(new Vector2(t.GetComponent<Rigidbody2D>().velocity.x, 0f), ForceMode2D.Impulse);
 					gotDamagedTrident = true;
 				}
 				if(t.playerAttacking && !gotDamagedMelee){
 					health -= tridentMeleeDamage;
-					if(rb)
-						rb.AddForce(new Vector2(tridentMeleeKnockback, 0f), ForceMode2D.Impulse);
 					gotDamagedMelee = true;
 				}
             }
@@ -77,8 +63,9 @@ public class enemyDeath : MonoBehaviour
 	
     void Update()
     {
-		if(health <= 0f) Die();
-        Debug.Log(t.hasEnoughVel);
+		if(health <= 0f){
+			Die();
+		} 
 		
 		if(!t.playerAttacking){
 			gotDamagedMelee = false;
