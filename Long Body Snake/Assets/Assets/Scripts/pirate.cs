@@ -17,7 +17,6 @@ public class pirate : MonoBehaviour
 
     public float ViewRange;
     public LayerMask playerLayerMask;
-<<<<<<< HEAD:Long Body Snake/Assets/pirate.cs
 	public LayerMask tridentLayerMask;
 	
 	public float knockbackForce = 2.5f;
@@ -25,8 +24,6 @@ public class pirate : MonoBehaviour
 	
 	private float cooldown = 0f;
 	public float cooldownOrigin = 0.4f;
-=======
->>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d:Long Body Snake/Assets/monkeplayer/pirate.cs
 
     void Start()
     {
@@ -68,7 +65,6 @@ public class pirate : MonoBehaviour
             anim.SetBool("movement", false);
             direction = 0;
         }
-<<<<<<< HEAD:Long Body Snake/Assets/pirate.cs
         
 		if(rb && !CanAttack){
 			rb.velocity = new Vector2(
@@ -76,13 +72,11 @@ public class pirate : MonoBehaviour
 				rb.velocity.y
 			);
 		}
-=======
        
         rb.velocity = new Vector2(
             speed * direction,
             rb.velocity.y
         );
->>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d:Long Body Snake/Assets/monkeplayer/pirate.cs
 
         if (CanAttack)
         {
@@ -90,9 +84,7 @@ public class pirate : MonoBehaviour
 			if(cooldown <= 0f){
             anim.SetTrigger("attack");
             anim.SetBool("Attacked", false);
-<<<<<<< HEAD:Long Body Snake/Assets/pirate.cs
             Invoke("AttackDone", 0.4f);
-            player.GetComponent<PlayerHealthManager>().playerHealth -= pirateDamage;
 
 			var p = player.GetComponent<PlayerMovement>();
 			p.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
@@ -103,10 +95,8 @@ public class pirate : MonoBehaviour
 
 			cooldown = cooldownOrigin;
 			}
-=======
             Invoke("AttackDone", 0.5f);
             CanAttack = false;
->>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d:Long Body Snake/Assets/monkeplayer/pirate.cs
         }
     }
 
@@ -114,13 +104,6 @@ public class pirate : MonoBehaviour
     {
         anim.SetBool("Attacked", true);
         anim.ResetTrigger("attack");
-<<<<<<< HEAD:Long Body Snake/Assets/pirate.cs
-=======
-        Invoke("SetCanAttack", Cooldown);
-        if(AttackReady){ 
-            player.GetComponent<PlayerHealthManager>().playerHealth -= 1;
-        }
->>>>>>> b059c604061ea994ec69b7a0736e6b2cac10c30d:Long Body Snake/Assets/monkeplayer/pirate.cs
     }
 
     private void OnDrawGizmos()
