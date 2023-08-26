@@ -112,10 +112,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2839650758747620757}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8308f72dff9df6d418a0fec416c2aef5, type: 3}
+  m_Script: {fileID: 11500000, guid: 7bb716f673441444cb1d6f1773e6bf6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   forceMultiplier: 2
+  rotationSpd: 30
+  playerDamage: 2
+  playerPush: 2
 --- !u!50 &5505833558269041784
 Rigidbody2D:
   serializedVersion: 4
