@@ -15,6 +15,7 @@ public class MainMenu1 : MonoBehaviour
     public GameObject[] buttons;
 
     [SerializeField] Animator cutscene;
+    [SerializeField] Animator player;
 
     private void Start()
     {
@@ -29,6 +30,7 @@ public class MainMenu1 : MonoBehaviour
     {
         click.Play();
         cutscene.SetTrigger("Start");
+        player.SetTrigger("Swim");
     }
 
     public void OpenCredits()

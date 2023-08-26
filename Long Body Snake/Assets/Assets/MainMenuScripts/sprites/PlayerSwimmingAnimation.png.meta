@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 99a3eab6bb4a55a4e9e265da6d8eb8ef
+guid: 2cb213b94d04a5442961b27625bd6aba
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 11
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,18 +71,6 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,11 +102,23 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -129,12 +129,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hp5
+      name: PlayerSwimmingAnimation_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 11
+        width: 17
         height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -143,19 +143,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ec38ad90f3505b4bae9b04f98945c19
-      internalID: -1868202368
+      spriteID: dd9a8d2a23ec19c4ca265f70edea187d
+      internalID: -1638340967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hp4
+      name: PlayerSwimmingAnimation_1
       rect:
         serializedVersion: 2
-        x: 11
+        x: 17
         y: 0
-        width: 11
+        width: 17
         height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -164,19 +164,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8303a1311bcd0dc4887aa50b3159f869
-      internalID: 499700266
+      spriteID: 25ae3d63bb15cb94a96b86e6882e4269
+      internalID: 1701772947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hp3
+      name: PlayerSwimmingAnimation_2
       rect:
         serializedVersion: 2
-        x: 22
+        x: 34
         y: 0
-        width: 11
+        width: 17
         height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -185,19 +185,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d701bc88d92b43a45a7f730cc183ba1b
-      internalID: 216753921
+      spriteID: c154442b073a6514d84c8854f8ae1d69
+      internalID: 847615074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hp2
+      name: PlayerSwimmingAnimation_3
       rect:
         serializedVersion: 2
-        x: 33
+        x: 51
         y: 0
-        width: 11
+        width: 17
         height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -206,19 +206,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc9b73fc411df62428ee3c7e7d5ea19a
-      internalID: -1702585355
+      spriteID: df8f5e792bd268046833594ae7a6b53a
+      internalID: -1168982741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hp1
+      name: PlayerSwimmingAnimation_4
       rect:
         serializedVersion: 2
-        x: 44
+        x: 68
         y: 0
-        width: 11
+        width: 17
         height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -227,19 +227,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af0e507d6bea19f408d4e8c5ea55ea44
-      internalID: 629179530
+      spriteID: d5d6984035b42a94a93c7abd55d3cc82
+      internalID: -1048505139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hp0
+      name: PlayerSwimmingAnimation_5
       rect:
         serializedVersion: 2
-        x: 55
+        x: 85
         y: 0
-        width: 11
+        width: 17
         height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -248,8 +248,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6249e9e687d923941a827f4ab01f02a1
-      internalID: -1334129224
+      spriteID: b5861130b758f1a45bb5a7e80381a60b
+      internalID: -1467600483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSwimmingAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b55d64d16c9ae46a8de936739be70f
+      internalID: -832672258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSwimmingAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 0
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46707fea4a37e3c4e97266d56fc777ef
+      internalID: -2146741152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSwimmingAnimation_8
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1997152e7b0f7454d8ff1cebeb5e7379
+      internalID: -1863143139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSwimmingAnimation_9
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 0
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06ec209c2a217d46b9a0d86866ab322
+      internalID: 48420744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSwimmingAnimation_10
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fe57a54b92b3b489a0a5fd3fc17a60
+      internalID: 95945412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSwimmingAnimation_11
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 0
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a2ad25cbe198247bfe6c9ef9b10181
+      internalID: 1867743935
       vertices: []
       indices: 
       edges: []
@@ -265,12 +391,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      hp2: -1702585355
-      hp0: -1334129224
-      hp4: 499700266
-      hp5: -1868202368
-      hp3: 216753921
-      hp1: 629179530
+      PlayerSwimmingAnimation_9: 48420744
+      PlayerSwimmingAnimation_5: -1467600483
+      PlayerSwimmingAnimation_10: 95945412
+      PlayerSwimmingAnimation_0: -1638340967
+      PlayerSwimmingAnimation_2: 847615074
+      PlayerSwimmingAnimation_7: -2146741152
+      PlayerSwimmingAnimation_1: 1701772947
+      PlayerSwimmingAnimation_3: -1168982741
+      PlayerSwimmingAnimation_6: -832672258
+      PlayerSwimmingAnimation_4: -1048505139
+      PlayerSwimmingAnimation_11: 1867743935
+      PlayerSwimmingAnimation_8: -1863143139
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
