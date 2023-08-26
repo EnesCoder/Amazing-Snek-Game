@@ -17,7 +17,10 @@ public class PlayerMovement : MonoBehaviour
 	public Transform groundChecker;
 	public float groundCheckRad = .5f;
 	public LayerMask groundLayer;
+	public LayerMask gooLayer;
 	private bool grounded;
+	private bool gooed;
+	public float gooMovMultiplier = 0.5f;
 	private bool canDoubleJump;
 	private bool canJump;
 	
@@ -32,6 +35,10 @@ public class PlayerMovement : MonoBehaviour
 	public bool InWater = false; 
 	public float waterMovementMultiplier = 1f;
 	
+	public bool gotKnocked;
+	public float knockTime = 0.5f;
+	private float knockTimeStart;
+	
 	[Header("Keys")]
 	public KeyCode jumpKey = KeyCode.Space;
 	
@@ -41,6 +48,8 @@ public class PlayerMovement : MonoBehaviour
 		ph = GetComponent<PlayerHealthManager>();
 		
 		fdtStart = fallDamageTimer;
+		gotKnocked = false;
+		knockTimeStart = knockTime;
 	}
 	
 	private void Update()
@@ -48,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
 		mousePos = Input.mousePosition;
 		mousePos = new Vector3(mousePos.x, mousePos.y, 0f);
 		grounded = Physics2D.OverlapCircle(groundChecker.position, groundCheckRad, groundLayer);
+		gooed = Physics2D.OverlapCircle(groundChecker.position, groundCheckRad, gooLayer);
 		canJump = grounded || canDoubleJump;
 		if(grounded && !Input.GetKey(jumpKey)) canDoubleJump = false;
 		Jump();
@@ -72,6 +82,14 @@ public class PlayerMovement : MonoBehaviour
 		
 		// flip
 		Flip();
+		
+		// getting knockbacked
+		if(gotKnocked)
+			knockTime -= Time.deltaTime;
+		if(knockTime <= 0f){
+			gotKnocked = false;
+			knockTime = knockTimeStart;
+		}
 	}
 	
 	private void FixedUpdate()
@@ -80,15 +98,17 @@ public class PlayerMovement : MonoBehaviour
 	}
 	
 	private void Movement(){
+		if(!gotKnocked){
 		if(!InWater)
-			rb.velocity = new Vector2(horM * movementSpeed, rb.velocity.y);
+			rb.velocity = new Vector2(horM * movementSpeed * (gooed ? gooMovMultiplier : 1f), rb.velocity.y);
 		else
-			rb.velocity = new Vector2(horM * movementSpeed * waterMovementMultiplier, rb.velocity.y);
+			rb.velocity = new Vector2(horM * movementSpeed * waterMovementMultiplier * (gooed ? gooMovMultiplier : 1f), rb.velocity.y);
+		}
 	}
 	
 	private void Jump(){
 		if(Input.GetKeyDown(jumpKey)){
-			if(canJump || InWater){
+			if((canJump || InWater) && !gooed){
 				rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
 				canDoubleJump = !canDoubleJump;
 			}
